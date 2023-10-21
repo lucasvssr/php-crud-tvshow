@@ -1,0 +1,214 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #002939;
+}
+
+body > * {
+    margin-left: 4pc;
+    margin-right: 4pc;
+}
+
+body > *:not(:last-child){
+    margin-bottom:15px;
+}
+
+div .menu {
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu {
+    font-size: 20px;
+    text-align: center;
+    color: #f7f1ea;
+    background-color: #a47442;
+    height: 3pc;
+    position: sticky;
+    top: 0px;
+}
+
+.home {
+    text-decoration: none;
+    color: #f7f1ea;
+}
+
+.choice .genre{
+    display: none;
+    position: absolute;
+}
+
+.choice:hover .genre{
+    display: block;
+}
+
+.genre {
+    background-color: #64403e;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.genre a {
+    text-decoration: none;
+    color: #ffffff;
+    text-align: left;
+}
+
+.genre > * {
+    height: 3pc;
+}
+
+.genre a:hover {
+    color: #f7f1ea;
+    background-color: #1c518d;
+}
+
+.header {
+    text-align: center;
+    color: #ffffff;
+}
+
+.content {
+    overflow: auto;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list>*{
+    background-color: #373f6e;
+}
+
+.list>*:not(:last-child){
+    margin-bottom: 15px ;
+}
+
+.list a {
+    text-decoration-line: none;
+    color: #ffffff;
+}
+
+.presentation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.season {
+    display: flex;
+    flex-direction: column;
+}
+
+.titres {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.titres > * {
+    margin: 5px;
+}
+
+.description {
+    color: #f7f1ea;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    font-family: Inter, fantasy;
+}
+a {
+    display: flex;
+    align-items: center;
+}
+
+a > *{
+    margin: 5px;
+}
+
+.pres:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.pres:hover,
+.saison:hover {
+    transition-duration: 0.4s;
+    background-color: #805a59;
+}
+
+.poster {
+    margin: 10px;
+}
+
+.serie {
+    flex-grow: 1;
+}
+
+.episode {
+    color: #f7f1ea;
+}
+
+.episode>* {
+    margin: 15px;
+}
+
+.footer {
+    text-align: center;
+    color: #f7f1ea;
+}
+
+
+/* Formulaire */
+
+.content form {
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    margin-top: 20px;
+    width: 600px;
+    flex-direction: column;
+    background-color: #1c518d;
+}
+
+label {
+    color: #f7f1ea;
+    display: flex;
+    flex-direction: column;
+}
+
+label h4 {
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+input{
+    font-size: 15px;
+    margin: 5px;
+}
+
+input[type=submit] {
+    height: 2pc;
+    background-color: #3d8d40;
+    color: #f7f1ea;
+}
+
+input[type=submit]:hover {
+    background-color: #204b20;
+    cursor: pointer;
+}
